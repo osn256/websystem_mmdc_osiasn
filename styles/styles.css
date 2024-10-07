@@ -1,0 +1,369 @@
+
+.search-container {
+    text-align: right;
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+#searchInput {
+    
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.PALAsmall_LOGO{
+    padding-left: 60px;
+    padding-top: 5px;
+}
+.welcome{
+    background-color: rgb(56, 118, 29);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfdfc;
+    background-image: linear-gradient(direction, color-stop1, color-stop2);
+    background: linear-gradient( to top,skyblue ,   rgb(34, 214, 94));
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h4, p {
+  
+    text-align: center;
+    color: #2a4b3c;
+    color: #dcf1e8;
+    font-weight: lighter;
+  
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 1px 0;
+}
+
+.palamain_logo img{
+    display: block;
+    margin: 250px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    background-color: #ffffff;
+    
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 118, 29);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #4a8452;
+    color: white;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+}
+
+/* Accordion */
+button.accordion {
+    background-color: rgb(56, 118, 29);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #4a8452;
+}
+/*
+.panel {
+    padding: 0 18px;
+    background-color: rgb(5, 253, 67);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: #4a8452;
+}
+*/
+.panel p {
+    padding: 20px;
+    /*background-color: #4a8452;*/
+    color: rgb(1, 24, 10);
+    padding: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight:10px;
+
+}
+
+/* Centering Images */
+.image-gallery {
+    text-align: center;
+    
+}
+
+.image-gallery img {
+    display: block;
+    margin: 60px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.10);
+}
+.center-button {
+    display: block;
+    margin: 10px auto; /* Centers the button */
+    padding: 10px 20px;
+    background-color: #4a8452;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.center-button:hover {
+    background-color: #2a4b3c;
+}
+.pala_iolap {
+    padding: 10px 15px;
+    position: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(56, 118, 29);
+}
+
+/* Footer */
+footer {
+    background-color:rgb(56, 118, 29);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h6{
+    font-size: 15px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 250px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sidebar {
+    animation: slideIn 0.5s;
+}
+
+h3, h4 {
+    animation: fadeIn 1.5s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Table Styling */
+.palashortcuts {
+    padding: 20px;
+    text-align: left;
+    font: 1em sans-serif;
+}
+
+.palashortcuts table {
+    width: 100%;
+    margin: auto;
+    color: #a3a3a3;
+    border-collapse: collapse;
+    border-collapse: inherit;
+}
+
+.palashortcuts table td {
+    padding: 15px;
+    background-color: #f8f9fa;
+    background-color: rgb(56, 118, 29);
+}
+
+.palashortcuts table td{
+    padding-bottom: 20px;
+
+}
+
+.palashortcuts a {
+    color: #fcfdfd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.palashortcuts a:hover {
+    color: #4400ff;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #4a8452;
+    color: white;
+    border: none;
+    height: 60;
+    width: 100;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2a4b3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .palashortcuts {
+        font-size: 14px;
+    }
+
+    .sidebar a {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:-webkit-linear-gradient();
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the image stays fixed while scrolling */
+    animation: backgroundChange 15s ease-in-out infinite; /* Animation for background change */
+    
+}
+
+/* Animation keyframes for background */
+@keyframes backgroundChange {
+    0% {
+        background-image:-webkit-linear-gradient(linear-gradient); /* Third image */
+    }
+    25% {
+        background-image:-webkit-linear-gradient(); /* Third image */
+    }
+    50% {
+        background-image:-webkit-linear-gradient(); /* Third image */
+    }
+}
+
+
+.socials {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.socials p {
+    font-size: 18px;
+    font-weight:100;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+    transform: scale(2.5); 
+}
+
+.socials img {
+    width: 36px;
+    height: 36px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.socials img:hover {
+    filter: grayscale(0%);
+    filter: brightness(50%);
+    filter:sepia(100%)
+}
+
