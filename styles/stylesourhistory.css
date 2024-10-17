@@ -24,14 +24,18 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.welcome p{
+    color: #dcf1e8;
+    font-size: 20px;
+}
 
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fcfdfc;
+    background-color: #ddffdd;
     background-image: linear-gradient(direction, color-stop1, color-stop2);
-    background: linear-gradient( to top,skyblue ,   rgb(34, 214, 94));
-    color: #333;
+    /*background: linear-gradient( to top,skyblue ,   rgb(34, 214, 94));*/
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -41,12 +45,11 @@ h2{
     text-align: center;
 
 }
-
 h3, h4, p {
   
     text-align: center;
     color: #2a4b3c;
-    color: #dcf1e8;
+    /*color: #dcf1e8;*/
     font-weight: bolder;
 }
 
@@ -60,6 +63,31 @@ h4 {
     margin: 1px 0;
 }
 
+.yoyhistory{
+    color:#000000;
+    font: size 15px; ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.year1962 h2, 
+.year1971 h2, 
+.year1977 h2, 
+.year1978 h2 {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+}
+
+.year1962 h3, 
+.year1971 h3, 
+.year1977 h3, 
+.year1978 h3 {
+  font-size: 30px;
+}
 
 
 .palamain_logo img{
@@ -130,34 +158,40 @@ button.accordion {
     border: none;
     outline: none;
     transition: background-color 0.4s ease;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight:lighter;
     margin-top: 10px;
 }
 
 button.accordion.active, button.accordion:hover {
     background-color: #4a8452;
 }
-/*
-.panel {
-    padding: 0 18px;
-    background-color: rgb(5, 253, 67);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    color: #4a8452;
+
+.ourHistory {
+    font-size:60px;
+    font-weight:10px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
-*/
 .panel p {
     padding: 20px;
-    /*background-color: #4a8452;*/
-    color: rgb(1, 24, 10);
+    background-color: rgb(56, 118, 29);
+    color: rgb(255, 255, 255);
     padding: auto;
+    text-align:left;
+    line-height: 40px;
     padding-left: 200px;
     padding-right: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:large;
     font-weight:10px;
-
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 
@@ -193,6 +227,7 @@ button.accordion.active, button.accordion:hover {
 .center-button:hover {
     background-color: #2a4b3c;
 }
+
 .pala_iolap {
     padding: 10px 15px;
     position: center;
@@ -201,6 +236,11 @@ button.accordion.active, button.accordion:hover {
     color: white;
     font-weight: bold;
     background-color: rgb(56, 118, 29);
+}
+
+.pala_iolap p {
+    color: white;
+
 }
 
 /* Footer */
@@ -348,7 +388,9 @@ body {
     font-size: 18px;
     font-weight:100;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #4a8452;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .socials a {
