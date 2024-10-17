@@ -21,7 +21,7 @@
 }
 .welcome{
     background-color: rgb(56, 118, 29);
-    padding-top: 10px;
+    padding-top: 25px;
     padding-bottom: 10px;
 }
 .welcome p{
@@ -107,7 +107,7 @@ h4 {
     cursor: pointer;
     padding: 15px;
     background-color: transparent;
-    color: #ffffff;
+    color: #073800;
     position: fixed;
     top: 0;
     left: 0;
