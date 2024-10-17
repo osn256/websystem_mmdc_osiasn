@@ -35,7 +35,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #ddffdd;
     background-image: linear-gradient(direction, color-stop1, color-stop2);
-    /*background: linear-gradient( to top,skyblue ,   rgb(34, 214, 94));*/
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -53,7 +52,7 @@ h3, h4, p {
 
 h3 {
     font-size: 20px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -64,11 +63,13 @@ h4 {
 .palamain_logo img{
     display: block;
     margin: 250px auto;
-    /*border-radius: 10px;*/
-    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);*/
     backface-visibility: hidden;
-    /*background-color: #ffffff;*/
-    
+    transition: transform 0.3s;
+
+}
+.palamain_logo img:hover{
+    transform: scale(1.20);
+
 }
 
 /* Hamburger Icon Styling */
@@ -137,19 +138,10 @@ button.accordion {
 button.accordion.active, button.accordion:hover {
     background-color: #4a8452;
 }
-/*
-.panel {
-    padding: 0 18px;
-    background-color: rgb(5, 253, 67);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    color: #4a8452;
-}
-*/
+ 
 .panel p {
     padding: 20px;
-    /*background-color: #4a8452;*/
+ 
     color: rgb(1, 24, 10);
     padding: auto;
     padding-left: 200px;
@@ -168,7 +160,7 @@ button.accordion.active, button.accordion:hover {
 
 .image-gallery img {
     display: block;
-    margin: 60px auto;
+    margin: 50px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -253,6 +245,7 @@ h3, h4 {
     padding: 20px;
     text-align: left;
     font: 1em sans-serif;
+    padding-top: 100px;
 }
 
 .palashortcuts table {
@@ -277,12 +270,14 @@ h3, h4 {
 .palashortcuts a {
     color: #fcfdfd;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bold;
     transition: color 0.3s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .palashortcuts a:hover {
-    color: #4400ff;
+    color:chartreuse;
 }
 
 /* Button Styling */
@@ -376,6 +371,6 @@ body {
 .socials img:hover {
     filter: grayscale(0%);
     filter: brightness(50%);
-    filter:sepia(100%)
+    filter:saturate(100%)
 }
 
