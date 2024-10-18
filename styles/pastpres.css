@@ -423,6 +423,20 @@ body {
     margin: 0-10px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #86da92;
+}
+.row2 {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    margin: 0-10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #c6ffcf;
 }
 
 .column {
@@ -435,8 +449,9 @@ body {
 .column img {
     /*width: 100%; /* Ensures the image fits the column width */
     object-fit: cover;
-    border-radius: 150px;
+    border-radius: 100px;
     margin-bottom: 25px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 .column img:hover {
