@@ -173,8 +173,8 @@ button.accordion.active, button.accordion:hover {
     font-weight:10px;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 
 }
 .panel p {
@@ -199,7 +199,7 @@ button.accordion.active, button.accordion:hover {
 /* Centering Images */
 .image-gallery {
     text-align: center;
-    
+
 }
 
 .image-gallery img {
@@ -412,4 +412,58 @@ body {
     filter: grayscale(0%);
     filter: brightness(50%);
     filter:saturate(100%)
+}
+
+
+/* For images of Presidents*/
+.row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    margin: 0-10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.column {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 1px;
+    text-align: center;
+}
+
+.column img {
+    /*width: 100%; /* Ensures the image fits the column width */
+    object-fit: cover;
+    border-radius: 150px;
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+.column img:hover {
+    transform: scale(1.15);
+}
+
+.column h3 {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.column p {
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
