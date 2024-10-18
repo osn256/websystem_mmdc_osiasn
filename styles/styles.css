@@ -65,6 +65,8 @@ h4 {
     margin: 250px auto;
     backface-visibility: hidden;
     transition: transform 0.3s;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 .palamain_logo img:hover{

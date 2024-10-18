@@ -69,7 +69,6 @@ h4 {
     padding-right: 300px;
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 .year1962 h2, 
 .year1971 h2, 
@@ -77,8 +76,8 @@ h4 {
 .year1978 h2 {
     font-size: 20px;
     padding-top: 5px;
-    padding-bottom: 50px;
-    padding-left: 90px;
+    padding-bottom: 25px;
+    padding-left: 150px;
 }
 
 .year1962 h3, 
@@ -90,6 +89,15 @@ h4 {
   background-color: rgb(56, 118, 29);
 }
 
+.yoyhistory ul {
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+.yoyhistory ul li{
+    padding-bottom: 5px;
+    font-weight:300;
+}
 
 .palamain_logo img{
     display: block;
@@ -173,8 +181,8 @@ button.accordion.active, button.accordion:hover {
     font-weight:10px;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 
 }
 .panel p {
@@ -184,13 +192,11 @@ button.accordion.active, button.accordion:hover {
     padding: auto;
     text-align:left;
     line-height: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:large;
+    font-size:22px;
     font-weight:10px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 400px;
+    padding-right: 400px;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -412,4 +418,20 @@ body {
     filter: grayscale(0%);
     filter: brightness(50%);
     filter:saturate(100%)
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
