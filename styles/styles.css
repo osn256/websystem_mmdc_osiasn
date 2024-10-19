@@ -24,10 +24,10 @@
     padding-top: 25px;
     padding-bottom: 10px;
 }
-
 .welcome p{
     color: #dcf1e8;
     font-size: 20px;
+    
 }
 
 /* General Styling */
@@ -38,6 +38,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    
 }
 
 h3, h4, p {
@@ -59,7 +60,19 @@ h4 {
     font-size: 20px;
     margin: 1px 0;
 }
+.palamain_logo{
+    background-image: url(images/poster.jpg);
+    animation:header-image-animation linear forwards;
+    animation-timeline: view();
+}
 
+@keyframes fade-out{
+    to {opacity:0}
+}
+@keyframes header-image-animation{
+    40% {opacity:1;}
+    100% {opacity: 0;}
+}
 .palamain_logo img{
     display: block;
     margin: 250px auto;
@@ -71,6 +84,7 @@ h4 {
 }
 .palamain_logo img:hover{
     transform: scale(1.20);
+    
 
 }
 
@@ -161,7 +175,6 @@ button.accordion.active, button.accordion:hover {
 /* Centering Images */
 .image-gallery {
     text-align: center;
-    
 }
 
 .image-gallery img {
@@ -170,6 +183,7 @@ button.accordion.active, button.accordion:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    
 }
 
 .image-gallery img:hover {

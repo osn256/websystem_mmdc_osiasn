@@ -168,13 +168,15 @@ button.accordion.active, button.accordion:hover {
     background-color: #4a8452;
 }
 
-.ourHistory {
+.pp {
     font-size:60px;
     font-weight:10px;
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 300px;
     padding-bottom: 300px;
+    background-image: url(images/poster.jpg);
+    
 
 }
 .panel p {
@@ -426,6 +428,7 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #86da92;
+    
 }
 .row2 {
     display: flex;
