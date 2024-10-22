@@ -149,12 +149,18 @@ button.accordion {
     transition: background-color 0.4s ease;
     font-size: 40px;
     margin-top: 25px;
+    
 }
 
 button.accordion.active, button.accordion:hover {
     background-color: #4a8452;
 }
- 
+.panel {
+    max-height: 0; /* Initial state - collapsed */
+    overflow: hidden; /* Hide content when collapsed */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for height */
+    background-color: rgb(162, 255, 162);
+}
 .panel p {
     padding: 20px;
     color: rgb(1, 24, 10);
@@ -169,9 +175,11 @@ button.accordion.active, button.accordion:hover {
     font-weight: bold;
     color:#1e4622;
     background-color: rgb(162, 255, 162);
-
+   
 }
-
+button.accordion.active + .panel {
+    max-height: 500px; /* Adjust this value to accommodate content */
+}
 /* Centering Images */
 .image-gallery {
     text-align: center;

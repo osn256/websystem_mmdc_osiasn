@@ -47,6 +47,28 @@ function searchFunction() {
 }
 
 
+var accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(function(accordion) {
+    accordion.addEventListener("click", function() {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+
+        // Check if panel is already open by looking at maxHeight value
+        if (panel.style.maxHeight) {
+            // Collapse the panel
+            panel.style.maxHeight = null;
+        } else {
+            // Resetting any previous height to ensure a fresh calculation
+            panel.style.maxHeight = "0px";
+            
+            // Use scrollHeight to calculate the required height for expansion
+            panel.style.maxHeight = panel.scrollHeight + "500px";
+        }
+    });
+});
+
 
 
 
