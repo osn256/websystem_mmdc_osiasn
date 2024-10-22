@@ -30,14 +30,14 @@
 }
 
 /* General Styling */
-/* body {
+body {
     font-family: 'Arial', sans-serif;
     background-color: #ddffdd;
     background-image: linear-gradient(direction, color-stop1, color-stop2);
     color: #ffffff;
     margin: 0;
     padding: 0;
-} */
+}
 h2{
     font-size: 15px;
     margin-bottom: 1px;
