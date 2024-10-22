@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our History</title>
 
-    <link rel="stylesheet" href="styles/cogs.css">
+    <link rel="stylesheet" href="styles/register.css">
 </head>
 <body>
     <div class= "welcome">
@@ -50,47 +50,32 @@
     </div>
 
 
-    <div class="cogs"><p>Certificate of<b> good standing</b></p></div>
+    <div class="cogs"><p>registration<b> form</b></p></div>
 
-    <div class="cogsdetails">
-    <div class="cogsprocessBD"><h3>COGS Process</h3></div>
-
-    <div class=" cogsicon">
-        <div class="column">
-            <img src="images/dues inquiry.gif" alt="Image 1" width="200" height="200">
-            <button type="dues" class="center-button">dues inquiry</button>
-            
-        </div>
-        <div class="column">
-            <img src="images/cpd.gif" alt="Image 2" width="200" height="200">
-            <button type="cpd" class="center-button">cpd inquiry</button>
-        </div>
-        <div class="column">
-            <img src="images/submitpayment.gif" alt="Image 3" width="200" height="200">
-            <button type="sp" class="center-button">submit payment</button>
-        </div>
-        <div class="column">
-            <img src="images/cogsapplication.gif" alt="Image 4" width="200" height="200">
-            <button type="ca" class="center-button">cogs application</button>
-        </div>
-
-    </div>
-    <ol>
-        <li>Click the <b>Dues Inquiry</b> icon to check your balance.</li>
-        <li>Click <b>CPD Inquiry</b> to check your available and required PALA CPD points (Required total CPD points: <strong>15 COD Points</strong>).</li>
-        <li>
-            Deposit the required amount due only to Philippine Association of Landscape Architects (PALA) bank accounts:
-            <div class="account-info">
-                <p>Account Name: Philippine Association of Landscape Architects</p>
-                <p>Account Number: BDO Current Account - 1208-0005-31</p>
-            </div>
-        </li>
-        <li><b>Submit payment</b> after the receipt of available balance.</li>
-        <li>Fill up the <b>COGS application</b> form.</li>
-        <li>Wait for the release of your certificate after <strong>5 working days</strong> from the date of application.</li>
-        <li>An email will be sent to you to notify the availability of your COGS.</li>
-    </ol>
-</div>
+    <div class="wrapper">
+        <form action="#">
+          <h2>Login</h2>
+            <div class="input-field">
+            <input type="text" required>
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required>
+            <label>Enter your password</label>
+          </div>
+          <div class="forget">
+            <label for="remember">
+              <input type="checkbox" id="remember">
+              <p>Remember me</p>
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit">Log In</button>
+          <div class="register">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
 
 
 <hr>

@@ -23,6 +23,10 @@
     background-color: rgb(56, 118, 29);
     padding-top: 25px;
     padding-bottom: 10px;
+
+    background-image: url("images/poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .welcome p{
     color: #dcf1e8;
@@ -30,14 +34,14 @@
 }
 
 /* General Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ddffdd;
-    background-image: linear-gradient(direction, color-stop1, color-stop2);
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
+/* body { */
+    /* font-family: 'Arial', sans-serif; */
+    /* background-color: #ddffdd; */
+    /* background-image: linear-gradient(direction, color-stop1, color-stop2); */
+    /* color: #ffffff; */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
 h2{
     font-size: 15px;
     margin-bottom: 1px;
@@ -170,10 +174,12 @@ button.accordion {
     font-size: 14px;
     font-weight:lighter;
     margin-top: 10px;
+    
 }
 
 button.accordion.active, button.accordion:hover {
     background-color: #4a8452;
+  
 }
 
 .ourHistory {
@@ -183,6 +189,9 @@ button.accordion.active, button.accordion:hover {
     padding-right: 300px;
     padding-top: 300px;
     padding-bottom: 300px;
+    background-image: url("images/poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 .panel p {
