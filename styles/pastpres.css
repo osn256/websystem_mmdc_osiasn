@@ -466,13 +466,39 @@ body {
     /*width: 100%; /* Ensures the image fits the column width */
     object-fit: cover;
     border-radius: 100px;
+    object-fit:cover;
     margin-bottom: 25px;
     box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    /* animation: rotate360 10s linear infinite; Rotate images continuously */
+    animation: flip 3s linear infinite;
 }
+
 .column img:hover {
     transform: scale(1.15);
+    animation-play-state: paused;
+    /* transform: rotateY(180deg); */
 }
+/* @keyframes flip {
+    0% {
+        transform: rotateY(0deg); /* Front side */
+    /* }
+    50% {
+        transform: rotateY(180deg); /* Back side */
+    /* }
+    100% {
+        transform: rotateY(360deg); /* Returns to front side */
+    /* }
+}   */ 
+/* @keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    } */
+/* } */
+/* ROTATE ANIMATION */
 
 .column h3 {
     text-align: center;

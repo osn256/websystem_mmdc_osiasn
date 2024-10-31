@@ -609,6 +609,7 @@ body {
 }
 .image-gallery img:hover {
     transform: scale(1.50);
+    
 }
 
 /* IMAGE FLEX ADJUSTMENT */
@@ -630,12 +631,18 @@ body {
     width: 100%; /* Makes the image responsive */
     height: auto; /* Maintains aspect ratio */
     margin: 0; /* Removes any default margin */
+    transition: transform 0.6s; /* Smooth transition for flip effect */
+    transform-style: preserve-3d; /* 3D effect for the flip */
 }
 
 .feature-content {
     flex: 1 1 50%; /* Takes up remaining 50% */
     max-width: 500px;
+    
 }
+/* .feature img:hover {
+    transform: rotateY(360deg);
+} */
 
 /* Responsive adjustment: stack items vertically on smaller screens */
 @media (max-width: 768px) {
