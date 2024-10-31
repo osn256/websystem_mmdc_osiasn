@@ -429,6 +429,10 @@ body {
     padding-bottom: 60px;
     background-color: #86da92;
     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the content horizontally */
+    gap: 20px; /* Space between columns */
 }
 .row2 {
     display: flex;
@@ -440,6 +444,11 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #c6ffcf;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the content horizontally */
+    gap: 20px; /* Space between columns */
 }
 
 .column {
@@ -447,6 +456,10 @@ body {
     max-width: 25%;
     padding: 1px;
     text-align: center;
+
+    flex: 1 1 300px; /* Ensures each column takes up at least 300px */
+    max-width: 300px; /* Limits the max width */
+    text-align: center; /* Center-aligns text in each column */
 }
 
 .column img {
@@ -483,5 +496,12 @@ body {
     .column {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center; /* Centers columns vertically */
     }
 }
