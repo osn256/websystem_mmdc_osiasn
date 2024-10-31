@@ -65,8 +65,9 @@ h3 {
 }
 .cogsdetails{
     padding-top: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-position: auto;
     
 }
 .cogsdetails h3{
@@ -100,6 +101,56 @@ h3 {
     padding-bottom: 60px;
     background-color: #86da92;
 }
+
+/* ADJUSTMENT FLEX */
+/* General styling for container and items */
+.cogsicon {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.column {
+    text-align: center;
+    flex: 1 1 200px; /* Make columns responsive */
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+}
+
+/* Stacking columns vertically on smaller screens */
+@media (max-width: 768px) {
+    .cogsicon {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 992px) {
+        .cogsicon {
+            grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .cogsicon {
+            grid-template-columns: 1fr; /* One column per row */
+        }
+    }
+    .column {
+        max-width: 100%;
+    }
+}
+
 
 h4 {
     font-size: 20px;

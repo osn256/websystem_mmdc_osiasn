@@ -87,6 +87,7 @@ h5 {
     background-image: url(images/poster.jpg);
     animation:header-image-animation linear forwards;
     animation-timeline: view();
+    
 }
 
 @keyframes fade-out{
@@ -189,8 +190,8 @@ button.accordion.active, button.accordion:hover {
     padding: 20px;
     color: rgb(1, 24, 10);
     padding: auto;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -203,6 +204,17 @@ button.accordion.active, button.accordion:hover {
 }
 button.accordion.active + .panel {
     max-height: 500px; /* Adjust this value to accommodate content */
+}
+
+@media (max-width: 480px) {
+    .accordion {
+        font-size: 0.9em; /* Further reduces font size */
+        padding: 10px;
+    }
+    .panel {
+        padding: 8px;
+        font-size: 0.85em;
+    }
 }
 /* Centering Images */
 .image-gallery {
@@ -310,7 +322,11 @@ h3, h4 {
     border-collapse: collapse;
     border-collapse: inherit;
 }
+.palashortcuts td {
+    vertical-align: top;
+    padding: 15px;
 
+}
 .palashortcuts table td {
     padding: 15px;
     background-color: #f8f9fa;
@@ -334,6 +350,26 @@ h3, h4 {
 
 .palashortcuts a:hover {
     color:chartreuse;
+}
+@media (max-width: 768px) {
+    .palashortcuts table {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .palashortcuts td {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+        border: none;
+    }
+    
+    .palashortcuts ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0;
+    }
 }
 
 /* Button Styling */
@@ -574,3 +610,42 @@ body {
 .image-gallery img:hover {
     transform: scale(1.50);
 }
+
+/* IMAGE FLEX ADJUSTMENT */
+
+
+
+.feature {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* Optional for section separation */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.feature img {
+    flex: 1 1 40%; /* Takes up 40% of the container on large screens */
+    max-width: 600px; /* Limits the max width of the image */
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0; /* Removes any default margin */
+}
+
+.feature-content {
+    flex: 1 1 50%; /* Takes up remaining 50% */
+    max-width: 500px;
+}
+
+/* Responsive adjustment: stack items vertically on smaller screens */
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column; /* Stacks image and text vertically */
+        text-align: center; /* Centers text on small screens */
+    }
+
+    .feature img, .feature-content {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
