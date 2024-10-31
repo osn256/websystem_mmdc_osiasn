@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +39,185 @@
       </div>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our History</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/register.css">
+  <style>
+    /* Center the wrapper */
+    .wrapper {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      background-color: transparent;
+      text-align: center;
+    }
+
+    /* Styling for form fields */
+    .input-field {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff; /* White text */
+      background-color: #28a745; /* Green background */
+      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .input-field input:focus {
+      border-color: #1e7e34; /* Darker green border on focus */
+      box-shadow: 0px 0px 5px rgba(46, 139, 87, 0.5);
+    }
+
+    .input-field label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #fff; /* White label color */
+      pointer-events: none;
+      transition: 0.3s;
+    }
+
+    .input-field input:focus + label,
+    .input-field input:not(:placeholder-shown) + label {
+      top: -5px;
+      font-size: 12px;
+      color: #fff; /* White label color on focus */
+    }
+
+    /* Styling for remember and forget password */
+    .forget {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .forget p {
+      margin: 0;
+    }
+
+    /* Styling for submit button */
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="PALAsmall_LOGO mb-3">
+      <img src="images/pala small logo.png" width="160" height="120" alt="PALA Logo">
+    </div>
+    <form action="#">
+      <h2>PALA Members Login</h2>
+      <div class="input-field">
+        <input type="email" required placeholder=" ">
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required placeholder=" ">
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#" data-toggle="modal" data-target="#forgotPasswordModal">Forgot password?</a>
+      </div>
+      <!-- <button type="submit">Log In</button> -->
+      <!-- <button type="button" id="loginButton">Log In</button> -->
+      <!-- <button type="button" href="index.html">Log In</button> -->
+      <button type="button" onclick="window.location.href='index.html'">Log In</button>
+      <div class="register mt-3">
+        <!-- <p>Don't have an account with PALA? <a href="#">Register</a></p> -->
+        <!-- <p>Don't have an account with PALA? <a href= "PALA2024Website/registration.html"window.location.href='registration.html'">Register</a></p> -->
+        <p>Don't have an account with PALA? <a href= "registrationform.html" window.location.href='registrationform.html'>Register</a></p>
+
+        <!-- <p>Already have an account? <a href= "PALA2024Website/index.html"window.location.href='index.html'">Log in here</a></p> -->
+
+      </div>
+    </form>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Please enter your email to receive password reset instructions.</p>
+          <div class="input-field">
+            <input type="email" required placeholder=" ">
+            <label>Email</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send Instructions</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function validateLogin(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Check if email and password match the specified credentials
+      if (email === "osias@mmdc.com.ph" && password === "1234") {
+        window.location.href = "index.html"; // Open index.html
+      } else {
+        alert("Invalid email or password. Please try again.");
+      }
+    }
+
+    // Add event listener to the login button
+    document.getElementById('loginButton').addEventListener('click', validateLogin);
+  </script>
+  <!-- <script src="script/register.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
-
-
