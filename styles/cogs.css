@@ -58,15 +58,15 @@ h3 {
 .cogs {
     font-size:60px;
     font-weight:10px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 300px;
     padding-bottom: 100px;
 }
 .cogsdetails{
     padding-top: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 00px;
+    padding-right: 00px;
     background-position: auto;
     
 }
@@ -527,7 +527,7 @@ body {
 }
 
 .column {
-    flex: 0 0 25%;
+    /* flex: 0 0 25%; */
     max-width: 25%;
     padding: 1px;
     text-align: center;
